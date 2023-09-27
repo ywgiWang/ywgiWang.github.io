@@ -45,12 +45,7 @@
   
 
   
-    <link href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js" async></script>
-  
 
-  
-    <link href="https://cdn.bootcss.com/social-share.js/1.0.16/css/share.min.css" rel="stylesheet">
   
   
   <script src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js" async></script>
@@ -215,7 +210,57 @@
   
   <div class="post">
     <h1 class="article-title">
-      <a href="/passages/my-new-post/">
+      <a href="/passages/2023-09-27something/">
+        <span>something</span>
+      </a>
+    </h1>
+    <!-- PC端文章信息 -->
+    <div class="article-top-meta pc-view">
+      <span>
+        发布时间 : 2023-09-27
+      </span>
+    </div>
+    <!-- 移动端文章信息 -->
+    <div class="article-top-meta mobile-view">
+      <span>
+        发布 : 2023-09-27
+      </span>
+      
+      
+        <span>
+          浏览 : <span class="article-timer" data-identity="2023-09-27something"></span>
+        </span>
+      
+    </div>
+    
+    <!-- 文章简介 -->
+    <div class="article-content">
+      <div class="markdown-body article-content--inner" v-html="mdToHtml(psg.summary)">
+        
+      </div>
+    </div>
+    <div class="article-footer">
+      <div class="article-meta pull-left">
+        <!-- 分类pc端可见 -->
+        <span class="pc-view">
+          
+        <span>
+                    
+        </span>
+      </div>
+      
+        <div class="article-meta pull-right">
+          <span class="pc-view">
+            <i class="iconfont icon-view"></i>浏览: <span class="article-timer" data-identity="2023-09-27something"></span>
+          </span>
+        </div>
+      
+    </div>
+  </div>
+  
+  <div class="post">
+    <h1 class="article-title">
+      <a href="/passages/2023-09-20-my-new-post/">
         <span>my new post</span>
       </a>
     </h1>
@@ -233,7 +278,7 @@
       
       
         <span>
-          浏览 : <span class="article-timer" data-identity="my-new-post"></span>
+          浏览 : <span class="article-timer" data-identity="2023-09-20-my-new-post"></span>
         </span>
       
     </div>
@@ -256,57 +301,7 @@
       
         <div class="article-meta pull-right">
           <span class="pc-view">
-            <i class="iconfont icon-view"></i>浏览: <span class="article-timer" data-identity="my-new-post"></span>
-          </span>
-        </div>
-      
-    </div>
-  </div>
-  
-  <div class="post">
-    <h1 class="article-title">
-      <a href="/passages/hello-world/">
-        <span>Hello World</span>
-      </a>
-    </h1>
-    <!-- PC端文章信息 -->
-    <div class="article-top-meta pc-view">
-      <span>
-        发布时间 : 2023-09-20
-      </span>
-    </div>
-    <!-- 移动端文章信息 -->
-    <div class="article-top-meta mobile-view">
-      <span>
-        发布 : 2023-09-20
-      </span>
-      
-      
-        <span>
-          浏览 : <span class="article-timer" data-identity="hello-world"></span>
-        </span>
-      
-    </div>
-    
-    <!-- 文章简介 -->
-    <div class="article-content">
-      <div class="markdown-body article-content--inner" v-html="mdToHtml(psg.summary)">
-        
-      </div>
-    </div>
-    <div class="article-footer">
-      <div class="article-meta pull-left">
-        <!-- 分类pc端可见 -->
-        <span class="pc-view">
-          
-        <span>
-                    
-        </span>
-      </div>
-      
-        <div class="article-meta pull-right">
-          <span class="pc-view">
-            <i class="iconfont icon-view"></i>浏览: <span class="article-timer" data-identity="hello-world"></span>
+            <i class="iconfont icon-view"></i>浏览: <span class="article-timer" data-identity="2023-09-20-my-new-post"></span>
           </span>
         </div>
       
@@ -452,7 +447,7 @@ if(true){
 
       <footer>
   <p class="site-info">
-    博客已萌萌哒运行<span id="time-to-now"></span><span class="my-face">(●'◡'●)ﾉ♥</span>
+    <!-- 博客已萌萌哒运行<span id="time-to-now"></span><span class="my-face">(●'◡'●)ﾉ♥</span> -->
     <br>
     Theme - <a target="_blank" rel="noopener" href="https://github.com/dongyuanxin/theme-bmw">BMW</a> | Made With 💗 | Powered by <a target="_blank" rel="noopener" href="https://godbmw.com/">GodBMW</a>
     <br>
@@ -464,7 +459,7 @@ if(true){
 
 <script>
 const timeToNowDOM = document.querySelector("#time-to-now");
-const startTimestamp = new Date(2018, 1, 10).getTime();
+const startTimestamp = new Date(2023, 8, 27).getTime();
 
 const updateTimeStr = () => {
   let offset = parseInt(
